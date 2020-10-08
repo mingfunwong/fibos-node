@@ -1,12 +1,14 @@
 [
-  "to-rpc.fibos.io:9870",
-  "fibos.starteos.io:9876",
-  "api.xxq.pub:8888",
   "seed.fibos.rocks:10100",
+  "to-p2p.fibos.io:9870",
+  "p2p-mainnet.qingah.com:9870",
+  "to-rpc.fibos.io:9870",
+  "api.xxq.pub:8888",
   "p2p-mainnet.bitewd.com:9870",
   "va-p2p.fibos.io:9870",
   "ca-p2p.fibos.io:9870",
   "sl-p2p.fibos.io:9870",
   "p2p-mainnet.loveyy.xyz:9870",
-  "ln-p2p.fibos.io:9870"
+  "ln-p2p.fibos.io:9870",
+  "fibos.starteos.io:9876"
 ]
