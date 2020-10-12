@@ -6,6 +6,7 @@ services:
     stop_grace_period: 1m
     ports:
       - "9000:8888"
+      - "9977:9977"
     volumes:
       - ./data:/fibos/data
       - /snapshots:/fibos/data/snapshots
