@@ -9,7 +9,6 @@ services:
       - "9977:9977"
     volumes:
       - ./data:/fibos/data
-      - /snapshots:/fibos/data/snapshots
       - ./genesis.json:/fibos/genesis.json
       - ./_config.js:/fibos/_config.js
       - ./start.js:/fibos/start.js
