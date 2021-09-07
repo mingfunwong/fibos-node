@@ -48,6 +48,7 @@ fibos.load("net", {
   "p2p-max-nodes-per-host": 20,
   "p2p-listen-endpoint": "0.0.0.0:9977",
   "p2p-peer-address": p2p,
+  "p2p-discoverable": true,
 });
 
 if (config["producer-enable"]) {
