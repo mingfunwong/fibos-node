@@ -1,2 +1,5 @@
-/data
+/data/blocks
+/data/state
+/data/config.ini
 .DS_Store
+*.bin

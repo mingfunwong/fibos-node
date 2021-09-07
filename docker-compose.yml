@@ -1,16 +1,17 @@
 version: '2'
-services: 
-  fibos: 
+services:
+  fibos:
     image: mingfunwong/fibos:v1.7.1.12
     restart: always
     stop_grace_period: 1m
     ports:
-      - "9000:8888"
-      - "9977:9977"
+      - '9000:8888'
+      - '9977:9977'
     volumes:
       - ./data:/fibos/data
       - ./genesis.json:/fibos/genesis.json
       - ./_config.js:/fibos/_config.js
       - ./start.js:/fibos/start.js
       - ./p2p.json:/fibos/p2p.json
-    command: ["fibos", "/fibos/start.js"]
+      - ./start.sh:/fibos/start.sh
+    command: ['bash', '/fibos/start.sh']
