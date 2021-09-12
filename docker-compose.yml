@@ -7,10 +7,11 @@ services:
     ports:
       - '9000:8888'
       - '9977:9977'
+    env_file:
+      - ./.env
     volumes:
       - ./data:/fibos/data
       - ./genesis.json:/fibos/genesis.json
-      - ./_config.js:/fibos/_config.js
       - ./start.js:/fibos/start.js
       - ./p2p.json:/fibos/p2p.json
       - ./start.sh:/fibos/start.sh

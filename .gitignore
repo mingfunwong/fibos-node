@@ -3,3 +3,4 @@
 /data/config.ini
 .DS_Store
 *.bin
+.env
