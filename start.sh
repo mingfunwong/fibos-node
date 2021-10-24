@@ -4,7 +4,7 @@ set -e
 SNAPSHOT_FOLDER=./data/snapshots
 rm -rf ./data
 
-if [ $SNAPSHOT_ENABLE = "true" ]; then
+if [ "$SNAPSHOT_ENABLE" = "true" ]; then
   mkdir ./data ./data/snapshots
   if [ ! $SNAPSHOT_URL ]; then  
     SNAPSHOT_URL=$(curl api.fibos123.com/last_snapshot)

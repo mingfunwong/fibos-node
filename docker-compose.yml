@@ -14,5 +14,4 @@ services:
       PUBLIC_KEY:
       PRIVATE_KEY:
       SNAPSHOT_ENABLE: 'true'
-      SNAPSHOT_URL:
-      # SNAPSHOT_URL: https://github.com/andy-backup/fibos/raw/master/snapshot.bin
+      SNAPSHOT_URL: https://github.com/andy-backup/fibos/raw/master/snapshot.bin
