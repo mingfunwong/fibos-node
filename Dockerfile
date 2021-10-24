@@ -12,3 +12,5 @@ ADD genesis.json .
 ADD start.js .
 ADD p2p.json .
 ADD start.sh .
+
+ENTRYPOINT ["bash", "/fibos/start.sh"]
