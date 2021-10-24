@@ -1,18 +1,22 @@
-start
+Start
 
-```
-cp .env.sample to .env
+```bash
 docker-compose up -d
 ```
 
-stop
+Stop
 
-```
+```bash
 docker-compose down
 ```
 
-producer
+Enable producer
 
-```
-edit `.env` file and input values.
+```bash
+vi docker-compose.yml
+# input below values:
+PRODUCER_ENABLE: 'true'
+PRODUCER_NAME: fibos123comm
+PUBLIC_KEY: xxx
+PRIVATE_KEY: xxxxx
 ```
