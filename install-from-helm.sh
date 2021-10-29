@@ -4,7 +4,7 @@ curl -sfL https://get.k3s.io | sh -
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 # setup helm
 mkdir ~/.kube
-sudo kubectl config view --raw >~/.kube/config
+kubectl config view --raw >~/.kube/config
 # add helm repo
 helm repo add mingfunwong https://mingfunwong.github.io/helm-charts
 
