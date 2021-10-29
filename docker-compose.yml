@@ -1,8 +1,7 @@
-version: '2'
 services:
   fibos:
     # build: ./
-    image: mingfunwong/fibos:v1.7.1.12
+    image: mingfunwong/fibos:1.7.1.12
     restart: always
     stop_grace_period: 1m
     ports:
@@ -13,5 +12,6 @@ services:
       PRODUCER_NAME: fibos123comm
       PUBLIC_KEY:
       PRIVATE_KEY:
+      PRODUCER_API_ENABLE: 'false'
       SNAPSHOT_ENABLE: 'true'
       SNAPSHOT_URL: https://github.com/andy-backup/fibos/raw/master/snapshot.bin

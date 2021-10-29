@@ -1,7 +1,7 @@
 const fibos = require('fibos');
 const p2p = require('./p2p.json');
 
-const { PRODUCER_ENABLE, PRODUCER_NAME, PUBLIC_KEY, PRIVATE_KEY, SNAPSHOT_FILE } = process.env;
+const { PRODUCER_ENABLE, PRODUCER_NAME, PUBLIC_KEY, PRIVATE_KEY, PRODUCER_API_ENABLE, SNAPSHOT_FILE } = process.env;
 
 const chain = {
   'chain-state-db-size-mb': 8192,
@@ -44,9 +44,11 @@ fibos.data_dir = './data';
 fibos.load('http', http);
 fibos.load('ethash');
 fibos.load('net', net);
-fibos.load('producer_api');
 fibos.load('chain', chain);
 fibos.load('chain_api');
+if (PRODUCER_API_ENABLE === 'true') {
+  fibos.load('producer_api');
+}
 if (PRODUCER_ENABLE === 'true') {
   fibos.load('producer', producer);
   fibos.load('bp_signature', bpSignature);
