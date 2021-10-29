@@ -24,7 +24,6 @@ SNAPSHOT_ENABLE=true
 SNAPSHOT_URL=https://github.com/andy-backup/fibos/raw/master/snapshot.bin
 # enable provide
 HTTP_ENABLE=false
-P2P_ENABLE=false
 # provide information
 HTTP_HOST=
 P2P_PORT=
