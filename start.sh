@@ -2,7 +2,7 @@
 set -e
 
 SNAPSHOT_FOLDER=./data/snapshots
-rm -rf ./data
+rm -rf ./data/*
 
 if [ "$SNAPSHOT_ENABLE" = "true" ]; then
   mkdir ./data ./data/snapshots
