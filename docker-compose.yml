@@ -1,6 +1,5 @@
 services:
   fibos:
-    # build: ./
     image: mingfunwong/fibos:1.7.1.12
     restart: always
     stop_grace_period: 1m
