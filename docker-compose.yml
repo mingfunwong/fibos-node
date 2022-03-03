@@ -1,6 +1,6 @@
 services:
   fibos:
-    image: mingfunwong/fibos:1.7.1.12
+    image: mingfunwong/fibos
     restart: always
     stop_grace_period: 1m
     ports:
