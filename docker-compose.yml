@@ -4,7 +4,7 @@ services:
     restart: always
     stop_grace_period: 1m
     ports:
-      - '9000:8888'
+      - '8080:8080'
       - '9977:9977'
     environment:
       PRODUCER_ENABLE: 'false'

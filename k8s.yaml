@@ -7,9 +7,9 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - name: '9000'
-      port: 9000
-      targetPort: 8888
+    - name: '8080'
+      port: 8080
+      targetPort: 8080
     - name: '30977'
       port: 30977
       targetPort: 9977
@@ -45,7 +45,7 @@ spec:
               service:
                 name: fibos-node-1-service
                 port:
-                  number: 9000
+                  number: 8080
 ---
 apiVersion: apps/v1
 kind: Deployment

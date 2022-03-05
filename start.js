@@ -7,7 +7,7 @@ const chain = {
   'chain-state-db-size-mb': 8192,
 };
 const http = {
-  'http-server-address': '0.0.0.0:8888',
+  'http-server-address': '0.0.0.0:8080',
   'access-control-allow-origin': '*',
   'access-control-allow-headers': 'Content-Type',
   'http-validate-host': false,

@@ -13,4 +13,6 @@ ADD start.js .
 ADD p2p.json .
 ADD start.sh .
 
+EXPOSE 8080
+
 ENTRYPOINT ["bash", "/fibos/start.sh"]
