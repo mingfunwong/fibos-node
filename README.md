@@ -15,7 +15,7 @@ Start
 docker-compose up -d
 ```
 
-Upldate
+Update
 
 ```bash
 docker-compose pull
