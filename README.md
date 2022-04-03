@@ -9,10 +9,16 @@ PUBLIC_KEY: xxx
 PRIVATE_KEY: xxxxx
 ```
 
-
-Start / Upldate
+Start
 
 ```bash
+docker-compose up -d
+```
+
+Upldate
+
+```bash
+docker-compose pull
 docker-compose up -d
 ```
 
