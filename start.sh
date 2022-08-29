@@ -16,7 +16,7 @@ if [ "$SNAPSHOT_ENABLE" = "true" ]; then
   fi
 
   if [ ! $SNAPSHOT_URL ]; then  
-    SNAPSHOT_URL=$(curl api.fibos123.com/last_snapshot)
+    SNAPSHOT_URL=$(curl https://api.fibos123.com/last_snapshot)
   fi
   wget $SNAPSHOT_URL -O $SNAPSHOT_FILE
 fi
