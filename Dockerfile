@@ -3,7 +3,7 @@ FROM ubuntu:latest
 WORKDIR /fibos
 
 RUN apt-get update -y \
-  && apt-get install -y curl sudo wget libusb-1.0-0 libcurl3-gnutls libncurses5 libssl1.0.0 \
+  && apt-get install -y curl sudo wget libusb-1.0-0 libcurl3-gnutls libncurses5 \
   && wget "http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb" \
   && dpkg -i libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb
 
