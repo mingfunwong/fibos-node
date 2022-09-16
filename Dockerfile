@@ -9,7 +9,7 @@ RUN apt-get update -y \
   && wget "http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7_amd64.deb" \
   && dpkg -i libicu55_55.1-7_amd64.deb
 
-RUN curl -s https://fibos.io/download/installer.sh?v1.7.1.12 | sh 
+RUN curl -s https://fibos.io/download/installer.sh?v1.7.1.13 | sh 
 
 ADD genesis.json .
 ADD start.js .
