@@ -1,4 +1,8 @@
 [
+  "bp.fo.chains.one:9876",
+  "idc.tinyhill.uk:9876",
+  "idc.blockeden.cn:9876",
+   "182.92.152.224:9870",
   "to-rpc.fibos.io:9870",
   "api.xxq.pub:8888",
   "p2p-mainnet.bitewd.com:9870",
@@ -20,7 +24,5 @@
   "rpc.fiboso.com:8870",
   "api.xxq.pub",
   "p2p-mainnet.fibos123.com:9977",
-  "39.98.64.192:9871",
-  "bp.fo.chains.one:9876",
-  "idc.tinyhill.uk:9876"
+  "39.98.64.192:9871"
 ]
