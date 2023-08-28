@@ -1,6 +1,10 @@
 [
-  "to-p2p.fibos.io:9870",
-  "p2p-mainnet.qingah.com:9870",
+  "bp.fo.chains.one:9876",
+  "idc.tinyhill.uk:9876",
+  "idc.blockeden.cn:9876",
+   "182.92.152.224:9870",
+  "67.205.167.7:9870",
+  "165.227.83.252:9870",
   "to-rpc.fibos.io:9870",
   "api.xxq.pub:8888",
   "p2p-mainnet.bitewd.com:9870",
@@ -10,12 +14,9 @@
   "p2p-mainnet.loveyy.xyz:9870",
   "ln-p2p.fibos.io:9870",
   "fibos.starteos.io:9876",
-  
   "p2p.mainnet.fibos.me:9870",
   "p2p.mainnet.hellofibos.com:9876",
   "134.175.20.135:8870",
-  "seed.fibos.rocks:10100",
-  "p2p-fibos.starteos.io:9870",
   "106.55.161.161:9870",
   "35.185.138.208:10443",
   "fibos-node.slowmist.io:9870",
@@ -25,6 +26,5 @@
   "rpc.fiboso.com:8870",
   "api.xxq.pub",
   "p2p-mainnet.fibos123.com:9977",
-  "39.98.64.192:9871",
-  "fibos.pool.lichang.io:10102"
+  "39.98.64.192:9871"
 ]
