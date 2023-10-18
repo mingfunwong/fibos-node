@@ -21,7 +21,7 @@ PRODUCER_API_ENABLE=false
 # use a snapshot
 SNAPSHOT_ENABLE=true
 # snapshot url
-SNAPSHOT_URL=https://github.com/andy-backup/fibos/raw/master/snapshot.bin
+SNAPSHOT_URL=https://snapshots.fibos123.com/latest.bin
 # enable provide
 HTTP_ENABLE=false
 # provide information

@@ -28,7 +28,7 @@ data:
   PRIVATE_KEY: ''
   PRODUCER_API_ENABLE: 'false'
   SNAPSHOT_ENABLE: 'true'
-  SNAPSHOT_URL: https://github.com/andy-backup/fibos/raw/master/snapshot.bin
+  SNAPSHOT_URL: https://snapshots.fibos123.com/latest.bin
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
