@@ -2,9 +2,10 @@
 set -e
 
 SNAPSHOT_FOLDER=./data/snapshots
-export SNAPSHOT_FILE=$SNAPSHOT_FOLDER/snapshot.bin
 
 if [ "$SNAPSHOT_ENABLE" = "true" ]; then
+
+  export SNAPSHOT_FILE=$SNAPSHOT_FOLDER/snapshot.bin
   rm -rf ./data/*
 
   if [ ! -d "./data" ];then
