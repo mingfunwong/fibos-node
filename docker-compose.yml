@@ -1,6 +1,6 @@
 services:
   fibos:
-    image: mingfunwong/fibos
+    image: docker.io/mingfunwong/fibos
     restart: always
     stop_grace_period: 1m
     ports:
