@@ -3,7 +3,7 @@ set -e
 
 SNAPSHOT_FOLDER=./data/snapshots
 
-if [ "$SNAPSHOT_ENABLE" = "true" ]; then
+if [ "$SNAPSHOT_ENABLE" != "false" ]; then
 
   export SNAPSHOT_FILE=$SNAPSHOT_FOLDER/snapshot.bin
   rm -rf ./data/*
@@ -22,4 +22,4 @@ if [ "$SNAPSHOT_ENABLE" = "true" ]; then
   wget $SNAPSHOT_URL -O $SNAPSHOT_FILE
 fi
 
-fibos /fibos/start.js
+fibos ./start.js
