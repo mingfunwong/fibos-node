@@ -1,4 +1,4 @@
 {
-	"name": "ubuntu 24.04",
-	"image": "ubuntu:24.04"
+	"name": "debian 12-slim",
+	"image": "debian:12-slim"
 }
