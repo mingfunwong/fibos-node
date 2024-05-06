@@ -22,7 +22,7 @@ RUN curl -s https://fibos.io/download/installer.sh?v1.7.1.13 | sh
 ADD genesis.json .
 ADD start.js .
 ADD p2p.json .
-ADD start.sh .
+ADD start-snapshot.sh .
 
 EXPOSE 8080
 
