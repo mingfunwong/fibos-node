@@ -1,7 +1,7 @@
 const fibos = require('fibos');
 const p2p = require('./p2p.json');
 
-const { PRODUCER_ENABLE, PRODUCER_NAME, PUBLIC_KEY, PRIVATE_KEY, PRODUCER_API_ENABLE, SNAPSHOT_FILE, HISTORY_ENABLE } = process.env;
+const { PRODUCER_ENABLE, PRODUCER_NAME, PUBLIC_KEY, PRIVATE_KEY, PRODUCER_API_ENABLE, SNAPSHOT_FILE, HISTORY_ENABLE, GHOST_FILE } = process.env;
 
 const chain = {
   'chain-state-db-size-mb': 8192,
