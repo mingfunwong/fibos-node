@@ -26,4 +26,4 @@ ADD start.sh .
 
 EXPOSE 8080
 
-ENTRYPOINT ["bash", "/app/start.sh"]
+ENTRYPOINT ["bash", "/app/start-snapshot.sh"]
