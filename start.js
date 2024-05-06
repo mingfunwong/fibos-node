@@ -1,7 +1,7 @@
 const fibos = require('fibos');
 const p2p = require('./p2p.json');
 
-const { PRODUCER_ENABLE, PRODUCER_NAME, PUBLIC_KEY, PRIVATE_KEY, PRODUCER_API_ENABLE, SNAPSHOT_FILE } = process.env;
+const { PRODUCER_ENABLE, PRODUCER_NAME, PUBLIC_KEY, PRIVATE_KEY, PRODUCER_API_ENABLE, SNAPSHOT_FILE, HISTORY_ENABLE } = process.env;
 
 const chain = {
   'chain-state-db-size-mb': 8192,
@@ -35,6 +35,8 @@ const bpSignature = {
 if (SNAPSHOT_FILE) {
   console.log('use snapshot', SNAPSHOT_FILE);
   chain['snapshot'] = SNAPSHOT_FILE;
+} else if (GHOST_FILE) {
+  console.log('use ghost', GHOST_FILE);
 } else {
   chain['genesis-json'] = './genesis.json';
 }
@@ -54,6 +56,10 @@ if (PRODUCER_ENABLE === 'true') {
   fibos.load('bp_signature', bpSignature);
 } else {
   fibos.load('producer');
+}
+if (HISTORY_ENABLE === 'true') {
+  fibos.load("history");
+  fibos.load("history_api");
 }
 
 fibos.start();
